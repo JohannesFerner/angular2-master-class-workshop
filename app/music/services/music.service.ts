@@ -1,6 +1,9 @@
 import {Injectable} from "angular2/core";
 import {Http} from "angular2/http";
-
+import {Observable} from "rxjs/observable";
+import "rxjs/operator/map";
+import {IAlbum} from "../models/ialbum";
+import {Album} from "../models/album";
 
 @Injectable() // make the music-service injectable
 export class MusicService {
@@ -11,8 +14,25 @@ export class MusicService {
     }
 
     albumSearch(query:string, page:number = 0) {
-        this.http.get(this.getApiUrl(query, page))
-        .retry(3);
+        return new Observable((observable:any) => {
+            this.http.get(this.getApiUrl(query, page))
+                .retry(3)
+                .map((res:any) => {
+                    res = res.json();
+
+                    var albums:Array<IAlbum> = [];
+
+                    let results = res.results;
+
+                    results.albummatches.album.forEach(data => {
+                        albums.push(new Album(data["mbid"], data["name"], data["artist"], data["url"], data["image"]));
+                    });
+
+                    observable.next({
+                        albums: albums
+                    });
+                });
+        });
     }
 
     private getApiUrl(query:string, page:number) {

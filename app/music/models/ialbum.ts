@@ -5,11 +5,11 @@ export interface IAlbum {
     url: string;
     streamable: boolean;
 
-    getImage(size:AlbumSize);
+    getImage(size:AlbumImageSize);
 }
 
-export enum AlbumSize {
-    SMALL = <string>"small",
-    MEDIUM = <string>"medium",
-    LARGE = <string>"large"
+export enum AlbumImageSize {
+    SMALL = <any>"small",
+    MEDIUM = <any>"medium",
+    LARGE = <any>"large"
 }
