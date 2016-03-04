@@ -1,7 +1,7 @@
-import  {Component} from 'angular2/core';
+import  {Component} from "angular2/core";
 
 @Component({
-    selector: 'welcome-component',
+    selector: "welcome-component",
     template: `<h1>WelcomeComponent</h1>
     `,
 })

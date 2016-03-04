@@ -1,7 +1,7 @@
-import  {Component} from 'angular2/core';
+import  {Component} from "angular2/core";
 
 @Component({
-    selector: 'albums-component',
+    selector: "albums-component",
     template: `<h1>AlbumsComponent</h1>
     `,
 })

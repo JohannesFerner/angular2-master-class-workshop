@@ -1,7 +1,7 @@
-import  {Component} from 'angular2/core';
+import  {Component} from "angular2/core";
 
 @Component({
-    selector: 'register-component',
+    selector: "register-component",
     template: `<h1>RegisterComponent</h1>
     `,
 })

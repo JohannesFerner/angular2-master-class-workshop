@@ -1,7 +1,7 @@
-import  {Component} from 'angular2/core';
+import  {Component} from "angular2/core";
 
 @Component({
-    selector: 'search-component',
+    selector: "search-component",
     template: `<h1>SearchComponent</h1>
     `,
 })

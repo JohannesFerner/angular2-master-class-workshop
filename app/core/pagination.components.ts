@@ -1,7 +1,7 @@
-import  {Component} from 'angular2/core';
+import  {Component} from "angular2/core";
 
 @Component({
-    selector: 'pagination-component',
+    selector: "pagination-component",
     template: `<h1>PaginationComponent</h1>
     `,
 })
