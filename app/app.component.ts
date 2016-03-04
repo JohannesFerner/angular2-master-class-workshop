@@ -16,7 +16,8 @@ import {RegisterComponent} from "./user/register.component";
         <header-component></header-component>
         <h1>Yeah yeah yeah!</h1>
     `,
-    directives: [FooterComponent, HeaderComponent]
+    directives: [FooterComponent, HeaderComponent, PaginationComponent, WelcomeComponent, AlbumComponent,
+        AlbumsComponent, LoginComponent, RegisterComponent]
 })
 @RouteConfig([
     {name: "Home", path: "/", component: WelcomeComponent},
