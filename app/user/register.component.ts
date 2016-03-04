@@ -1,8 +1,8 @@
 import  {Component} from 'angular2/core';
 
 @Component({
-    selector: 'registration',
-    template: `<h1>RegistrationComponent</h1>
+    selector: 'register-component',
+    template: `<h1>RegisterComponent</h1>
     `,
 })
-export class RegistrationComponent {}
+export class RegisterComponent {}
