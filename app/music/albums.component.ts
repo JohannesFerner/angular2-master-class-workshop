@@ -5,7 +5,11 @@ import {IAlbum} from "./models/ialbum";
 
 @Component({
     selector: "albums-component",
-    template: `<h1>AlbumsComponent</h1>
+    template: `<h1>Albums</h1>
+
+    <ul>
+        <li *ngFor="#album of albums">{{album.name}}</li>
+    </ul>
     `,
     providers: [MusicService]
 })

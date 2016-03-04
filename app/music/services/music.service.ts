@@ -15,7 +15,9 @@ export class MusicService {
     }
 
     albumSearch(query:string, page:number = 0) {
+        console.info('albumSearch', query, page);
         return new Observable((observable:any) => {
+            console.info('albumSearch should fire XHR now:');
             this.http.get(this.getApiUrl(query, page))
                 .map((res:any) => {
                     res = res.json();
@@ -28,9 +30,12 @@ export class MusicService {
                         albums.push(new Album(data["mbid"], data["name"], data["artist"], data["url"], data["image"]));
                     });
 
-                    observable.next({
-                        albums: albums
-                    });
+                    return {
+                        albums : albums
+                    };
+                })
+                .subscribe(res => {
+                    observable.next(res);
                 });
         });
     }
@@ -41,6 +46,7 @@ export class MusicService {
             "&page=" + page +
             "&api_key=" + this.apiKey + "&format=json";
 
+        console.info('ApiUrl', url);
         return url;
     }
 
