@@ -1,7 +1,8 @@
 import {Injectable} from "angular2/core";
 import {Http} from "angular2/http";
-import {Observable} from "rxjs/observable";
-import "rxjs/operator/map";
+import {Observable} from 'rxjs/Observable';
+import "rxjs/add/operator/map";
+
 import {IAlbum} from "../models/ialbum";
 import {Album} from "../models/album";
 
@@ -16,7 +17,6 @@ export class MusicService {
     albumSearch(query:string, page:number = 0) {
         return new Observable((observable:any) => {
             this.http.get(this.getApiUrl(query, page))
-                .retry(3)
                 .map((res:any) => {
                     res = res.json();
 
