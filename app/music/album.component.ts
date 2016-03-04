@@ -3,7 +3,7 @@ import {RouteParams} from "angular2/router"
 
 @Component({
     selector: "album-component",
-    template: `<h1>AlbumComponent</h1>
+    template: `<h1>Album</h1>
     `
 })
 export class AlbumComponent {
