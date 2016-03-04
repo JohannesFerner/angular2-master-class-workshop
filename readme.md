@@ -1,6 +1,7 @@
 # Angular2 MasterClass Workshop
 
-Project did in : http://www.meetup.com/Vienna-AngularJS-Master-Class-Meetup/
+A Sample Project we did in : http://www.meetup.com/Vienna-AngularJS-Master-Class-Meetup/
+credits for the ideas go to [Alejandro Rangel](https://www.linkedin.com/in/arangelp) for the sample prjject
 
 # Install Steps:
 

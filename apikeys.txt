@@ -1,0 +1,4 @@
+Application name	MyTunes
+API key	78086a2cb461f335235cdd822b8c5b4d
+Shared secret	528c3d8c5ad93ebb989b3da4c5fc232d
+Registered to	johannes-ferner

@@ -107,7 +107,7 @@
             "member-variable-declaration"
         ],
         "typedef-whitespace": [
-            true,
+            false,
             {
                 "call-signature": "nospace",
                 "index-signature": "nospace",
@@ -135,7 +135,7 @@
             "ban-keywords"
         ],
         "whitespace": [
-            true,
+            false,
             "check-branch",
             "check-decl",
             "check-operator",
