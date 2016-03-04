@@ -5,4 +5,5 @@ import  {Component} from "angular2/core";
     template: `<h1>LoginComponent</h1>
     `,
 })
-export class LoginComponent {}
+export class LoginComponent {
+}

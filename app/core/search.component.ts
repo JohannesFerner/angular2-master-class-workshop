@@ -5,4 +5,5 @@ import  {Component} from "angular2/core";
     template: `<h1>SearchComponent</h1>
     `,
 })
-export class SearchComponent {}
+export class SearchComponent {
+}

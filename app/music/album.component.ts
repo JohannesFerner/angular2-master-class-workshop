@@ -5,4 +5,5 @@ import  {Component} from "angular2/core";
     template: `<h1>AlbumComponent</h1>
     `,
 })
-export class AlbumComponent {}
+export class AlbumComponent {
+}

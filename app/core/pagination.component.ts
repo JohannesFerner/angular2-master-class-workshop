@@ -5,4 +5,5 @@ import  {Component} from "angular2/core";
     template: `<h1>PaginationComponent</h1>
     `,
 })
-export class PaginationComponent {}
+export class PaginationComponent {
+}
