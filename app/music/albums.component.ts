@@ -1,6 +1,6 @@
-import  {Component, OnInit} from "angular2/core";
-
-import  {MusicService} from "./services/music.service"
+import {Component, OnInit} from "angular2/core";
+import {RouterLink} from "angular2/router";
+import {MusicService} from "./services/music.service"
 import {IAlbum} from "./models/ialbum";
 
 @Component({
