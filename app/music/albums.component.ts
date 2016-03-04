@@ -8,10 +8,11 @@ import {IAlbum} from "./models/ialbum";
     template: `<h1>Albums</h1>
 
     <ul>
-        <li *ngFor="#album of albums">{{album.name}}</li>
+        <li *ngFor="#album of albums" [routerLink]="['Album', {id: album.id}]" >{{album.name}}</li>
     </ul>
     `,
-    providers: [MusicService]
+    providers: [MusicService],
+    directives: [RouterLink]
 })
 export class AlbumsComponent {
 
